@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Pop the Ballons</title>
+    <title>풍선 터뜨리기</title>
 </head>
 <body>
     <div class="wrapper">
-        <h1>Pop the balloons by moving</br>your mouse over them</h1>
-        <div id="yay-no-balloons"><span class="blue">Wow!</span> All balloons popped!</div>
+        <h1>마우스를 이동하여</br>풍선을 터뜨리세요</h1>
+        <h2 id="score">Score: 0</h2>
+        <div id="yay-no-balloons"><span class="blue">와우!</span> 모든 풍선이 터졌어요!</div>
         <div id="balloon-gallery">
             <div class="balloon"></div>
             <div class="balloon"></div>
@@ -36,8 +37,9 @@
             <div class="balloon"></div>
             <div class="balloon"></div>
             <div class="balloon"></div>
+            <div class="balloon"></div>
         </div>
-
+        <div id="game-over-message"></div>
     </div>
     <script src="app.js"></script>
 </body>
